@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,10 +20,22 @@
   </head>
   <body>
     <header></header>
-    <main></main>
-    <footer class="text-center bg-info">
-        <p>&copy;Derechos Reservados </p>
-
+    <main>
+      <h1 class="text-center my-4 text-primary-emphasis">Adivina el Número</h1>
+      <section class="container-fluid text-center">
+        <h3 class="text-danger my-4">Presiona el Botón para comenzar</h3>
+        <button class="btn btn-primary">Comenzar el Juego</button>
+        <article class="my-4">
+          <h5>Ingresa un Número</h5>
+          <form>
+            <input type="number" placeholder="Ingrese un número" />
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer class="text-center bg-info-subtle text-primary-emphasis">
+      <p>&copy;Derechos Reservados</p>
     </footer>
   </body>
 </html>
