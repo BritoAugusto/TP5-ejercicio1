@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,10 +20,33 @@
   </head>
   <body>
     <header></header>
-    <main></main>
-    <footer class="text-center bg-info">
-        <p>&copy;Derechos Reservados </p>
-
+    <main>
+      <h1 class="text-center my-4 text-primary-emphasis">Adivina el Número</h1>
+      <section class="container-fluid text-center">
+        <h3 class="text-danger my-5">Presiona el Botón para comenzar</h3>
+        <button id="comenzarJuego" class="btn btn-primary my-5">
+          Comenzar el Juego
+        </button>
+        <article class="my-2">
+          <h5 id="tituloIngresar"></h5>
+          <form class="my-5">
+            <input
+              id="numeroIngresado"
+              type="number"
+              placeholder="Ingrese un número"
+              minlength="1"
+              maxlength="2"
+              required
+            />
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </article>
+        <h4 id="salida" class="bg-primary"></h4>
+      </section>
+    </main>
+    <footer class="text-center bg-info-subtle text-primary-emphasis">
+      <p>&copy; Derechos Reservados - Augusto Brito - </p>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
